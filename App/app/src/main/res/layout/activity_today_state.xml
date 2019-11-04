@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/example_nav_bar"
+    tools:context=".TodayState">
+
+    <TextView
+        android:id="@+id/today_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="일간 소음통계입니다."
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/kopubdotumlight"/>
+
+    <com.github.mikephil.charting.charts.RadarChart
+        android:id="@+id/today_chart1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/today_text1"
+        android:layout_marginTop="20dp"/>
+
+    <com.github.mikephil.charting.charts.RadarChart
+        android:id="@+id/today_chart2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/today_chart1"/>
+
+</RelativeLayout>

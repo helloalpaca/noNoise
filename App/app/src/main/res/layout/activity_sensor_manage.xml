@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/example_nav_bar"
+    tools:context=".SensorManage">
+
+    <TextView
+        android:id="@+id/sensor_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="소음 측정"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/kopubdotumlight"/>
+
+    <TextView
+        android:id="@+id/sensor_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sensor_text1"
+        android:layout_centerHorizontal="true"
+        android:text="터치하여 소음측정기를 Off할 수 있습니다."
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/kopubdotumlight"/>
+
+    <ToggleButton
+        android:id="@+id/sensor_btn1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/greycircle"
+        android:textSize="30dp"
+        android:fontFamily="@font/kopubdotumlight"
+        android:textColor="@color/black"
+        android:textOn="@string/room_add_open_on"
+        android:textOff="@string/room_add_open_off" />
+
+</RelativeLayout>

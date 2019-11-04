@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name" textColor="#ffffff">noNoise</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">아파트</string>
+    <string name="nav_header_subtitle">101호</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_realtime">우리집 실시간 소음</string>
+    <string name="menu_today">일간 소음 통계</string>
+    <string name="menu_week">주간 소음 통계</string>
+    <string name="menu_onoff">센서 On/Off 신청</string>
+    <string name="menu_send">메세지 보내기</string>
+    <string name="menu_noiselist">아파트 소음시간표</string>
+
+    <string name="room_add_open_on">ON</string>
+    <string name="room_add_open_off">OFF</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    tools:context=".PopUp">
+
+    <TextView
+        android:id="@+id/popup_home_No"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="303호"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/kopubdotumlight" />
+
+    <TextView
+        android:id="@+id/popup_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_below="@id/popup_home_No"
+        android:text="8월 20일 10시부터 21시까지 뫄뫄 이유로 소음이 발생 할 예정입니다. 빠르게 완료하겠으니 이쁘게 봐주세요"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/kopubdotumlight" />
+
+</RelativeLayout>

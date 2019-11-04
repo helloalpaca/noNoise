@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/example_nav_bar"
+    android:orientation="vertical"
+    tools:context=".Realtime">
+
+    <TextView
+        android:id="@+id/realtime_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="101호"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/kopubdotumlight"/>
+
+    <TextView
+        android:id="@+id/realtime_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="실시간 소음입니다."
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/kopubdotumlight" />
+
+    <RelativeLayout
+        android:id="@+id/realtime_relative1"
+        android:layout_width="360dp"
+        android:layout_height="360dp">
+
+        <ImageView
+            android:id="@+id/realtime_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/now_circle"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:id="@+id/realtime_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kopubdotumlight"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="30dp"
+            android:text="40dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="50dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/example_nav_bar"
+    tools:context=".SendMessage">
+
+    <TextView
+        android:id="@+id/send_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="소음 공지사항을 알려주세요"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/kopubdotumlight"/>
+
+    <Spinner
+        android:id="@+id/spinner_month"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/send_text1"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/month"
+        android:textAlignment="center"/>
+
+    <Spinner
+        android:id="@+id/spinner_date"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/spinner_month"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/date"
+        android:textAlignment="center"/>
+
+    <Spinner
+        android:id="@+id/spinner_time"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/spinner_date"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/time"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/send_edit1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/kopubdotumlight"
+        app:theme="@style/EditTextStyle"/>
+
+    <ImageButton
+        android:id="@+id/send_imgbtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_send"
+        android:background="#00ff0000"
+        android:layout_below="@id/send_edit1"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="onButtonClicked"/>
+
+</RelativeLayout>

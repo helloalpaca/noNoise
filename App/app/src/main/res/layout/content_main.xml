@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    android:background="@drawable/main_background"
+    android:orientation="vertical"
+    tools:showIn="@layout/app_bar_main">
+
+    <ImageButton
+        android:id="@+id/main_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#00ff0000"
+        android:src="@android:drawable/ic_menu_sort_by_size" />
+
+    <TextView
+        android:id="@+id/main_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="구서 다움아파트"
+        android:textSize="10dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/kopubdotumlight"/>
+
+    <TextView
+        android:id="@+id/main_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="101호"
+        android:textSize="40dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/kopubdotumlight"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="360dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/main_information"/>
+
+        <TextView
+            android:id="@+id/main_text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:text="802호"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/kopubdotumlight"/>
+
+        <TextView
+            android:id="@+id/main_text6"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="170dp"
+            android:text="9월 10일 늦은 오후 소"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/kopubdotumlight"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/main_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/main_button_background"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="소음시간표 작성하기"
+        android:textColor="@color/white"
+        android:fontFamily="@font/kopubdotumlight"
+        android:onClick="onButtonClicked2"/>
+
+</LinearLayout>

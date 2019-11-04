@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_realtime"
+            android:icon="@drawable/realtime"
+            android:title="@string/menu_realtime" />
+
+        <item
+            android:id="@+id/nav_today"
+            android:icon="@drawable/today"
+            android:title="@string/menu_today" />
+
+        <item
+            android:id="@+id/nav_week"
+            android:icon="@drawable/week"
+            android:title="@string/menu_week" />
+<!--
+        <item
+            android:id="@+id/nav_onoff"
+            android:icon="@drawable/onoff"
+            android:title="@string/menu_onoff" />
+
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_tools" />
+            -->
+    </group>
+
+    <item android:title="Communicate"
+        android:id="@+id/tools">
+        <menu>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/message"
+                android:title="@string/menu_send" />
+            <item
+                android:id="@+id/nav_noiselist"
+                android:icon="@drawable/noiselist"
+                android:title="@string/menu_noiselist" />
+        </menu>
+    </item>
+
+</menu>
