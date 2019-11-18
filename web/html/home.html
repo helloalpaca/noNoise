@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
+    <script type="text/javascript" src="../js/timeWeather.js"></script>
+    <script type="text/javascript" src="../js/houseInfo.js"></script>
+    <script type="text/javascript" src="../js/graph.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+
+
+<div class="wrapper">
+    <div class="left-box">
+        <div class="today-info">
+            <div class="time-info col-md-6">
+                <div class="date-box">2019.02.12(토)</div>
+                <div class="date-time-box"></div>
+            </div>
+            <div class="weather-box col-md-6">
+                <div class="dust-info">미세먼지
+                    <strong class="dust-result">좋음</strong>
+                </div>
+                <div class="today-weather-info">오늘날씨
+                    <span class="weather-result"></span>
+                    <img class="weather-icon"></img>
+                </div>
+            </div>
+        </div>
+        <div class="house-info">
+            <div class="house-info-title">세대 별 메시지</div>
+            <div class="table-wrapper">
+            <table class="house-list">
+                <tbody>
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+    <div class="right-box">
+        <div class="graph-header">우리 동네 층간 소음 통계</div>
+        <div class="msg">
+            <h2>배려가 넘쳐요</h2>
+            <strong>40데시벨</strong> 주간의 조용한 주택
+        </div>
+        <div class="main-graph">
+            <img class="circle-graph" src="../img/main_graph.png"/>
+        </div>
+        <div class="bar-wrapper">
+            <img class="bar-graph" src="../img/bar_graph.png"/>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="roomMsg" tabindex="-1" role="dialog" aria-labelledby="roomMsgLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="roomMsgLabel"></h4>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    window.addEventListener('load', ()=> {
+        printCurrentTime();
+        printCurrentDate();
+        getTodayWeather();
+        // getTodayDust();
+        fetchHouseList();
+        // loadMainChart();
+        loadSubChart();
+    });
+</script>
+</body>
+</html>
