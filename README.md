@@ -1,9 +1,6 @@
 # noNoise
 Project for noise resolution between floors
 =======
-- Developer : Minseon Kwon, chaebin Lim, Yeeun Lee, Seungchun Lee
-- Designer : Namhee Kim, Junghyun Lee
-- email address : jms393497@gmail.com
 
 Introduction
 ------------
