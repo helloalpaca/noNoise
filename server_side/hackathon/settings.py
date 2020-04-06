@@ -83,9 +83,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'hackathon',
-        'USER': 'user',
-        'PASSWORD': '12341234',
-        'HOST': 'db.ci5xkq0xyo3b.ap-northeast-2.rds.amazonaws.com',
+        'USER': 'root',
+        'PASSWORD': '123456',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
     }
 }
@@ -133,5 +133,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 CORS_ORIGIN_ALLOW_ALL = True
 
 CORS_ALLOW_CREDENTIALS = True
-
-
