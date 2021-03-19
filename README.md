@@ -1,7 +1,6 @@
 # noNoise
 Project for noise resolution between floors <br />
 - email address : jms393497@gmail.com <br />
-- blog : https://popcorn16.tistory.com/ <br />
 
 ## Development Environment
 - Arduino @1.8.10
